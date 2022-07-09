@@ -6,6 +6,9 @@
       "dom.iterable",
       "esnext"
     ],
+    "types":["node", "jest"],
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "baseUrl":"src",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -21,6 +24,7 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "./declaration.d.ts"
   ]
 }

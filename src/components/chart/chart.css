@@ -1,0 +1,24 @@
+.chart{
+    position: relative;
+}
+
+
+.algo-title{ 
+    margin-bottom: 1rem;
+    fill:var(--text-color);
+    background-color: var(--bg-color);
+    /* border: 1px solid red; */
+}
+
+.bars{ fill: orangered}
+.red{
+    fill:orangered;
+}
+.algo-title{
+    top:0;
+    left:0;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    position: absolute;
+}

@@ -1,0 +1,83 @@
+.modesMenu{
+    width: 100%;
+    transition: all .2s ease;
+}
+
+.modesMenuContent{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    border-radius: 7px; 
+}
+
+.switch{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    margin: 0 3px;
+}
+.switch :nth-child(1){ border-radius:  7px 0 0 7px }
+.switch :nth-child(2){ border-radius:  0 7px 7px 0 }
+
+.button{
+    height: 100%;
+    padding: 0 1rem; 
+    outline: none;
+    border: .2rem  solid var(--color-primary-2);
+    color:var(--text-color);
+    background-color: var(--bg-color);
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.button[disabled]{ 
+    cursor: unset;
+    color:var(--color-disabled);     
+    border: .2rem  solid var(--color-primary-1);
+}
+.button[disabled]:hover, 
+.button[disabled]:focus{ background-color: var(--bg-color); }
+
+.active{
+    background-color: var(--bg-color);
+    border: .2rem  solid var(--color-primary-2);
+    box-shadow: inset 2px 3px 2px 0 var(--shadow-inner-dark),
+    inset -2px -2px 2px 0 var(--shadow-inner-light);
+}
+.passive{
+    border: .2rem  solid var(--color-primary-1);
+    background-color: var(--bg-color);
+}
+
+@media only screen and (max-width:768px ) {
+    .modesMenuContent{
+        padding: 1rem;
+    }
+
+}
+
+
+@media only screen and (min-width:1024px ) {
+    .modesMenuContent{
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+        min-width: 20rem;
+    }
+    .modesMenu{
+        margin: 0 auto;
+        /* background-color: brown; */
+        width:90%;
+    }
+    .button{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (min-width:1200px ) {
+    .button{
+        font-size: 1.2rem;
+    }
+}

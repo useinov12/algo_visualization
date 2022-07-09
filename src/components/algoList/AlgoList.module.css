@@ -1,0 +1,45 @@
+.algoListComponent{
+    height: 100%;
+    width: 100%;
+  
+
+}
+
+.listMenu{
+    display: flex;
+    justify-content: space-around;
+    padding: .2rem;
+    border-radius: 7px;
+    border: .2rem solid var(--color-primary-2);
+    color:var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.algoList{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+@media only screen and (min-width:481px ) {
+    .algoList.compareMode{
+        margin-top: .5rem;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr); ;
+        gap: .1rem;
+    }
+    .algoList.singleMode{
+        grid-template-columns: repeat(1, 1fr);
+        /* background-color: cornflowerblue; */
+        height: 100%;
+    }
+}
+@media only screen and (min-width:768px ) {
+   
+    .algoList.compareMode{
+        grid-template-columns: repeat(2, 1fr); ;
+    }
+    .algoList.singleMode{
+        grid-template-columns: repeat(1, 1fr); ;
+    }
+}

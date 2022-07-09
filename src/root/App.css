@@ -1,0 +1,99 @@
+
+:root{
+  --bg-color:#1d1e22;
+  --bg-color-shade:#222429;
+  --bg-color-2:#23272e;
+
+  --text-color:#F6E9E9;
+  --text-color-2:#d4d4dc;
+  --green:#51c726;
+  --green-glow:#5c9e44;
+
+  --color-primary-1:#393f4d;
+  --color-primary-2:#11999E;
+  --color-primary-3:#4DA8DA;
+  --color-primary-4:#EEFBFB;
+  --color-danger:#c1432e;
+  --color-warning:#feda6a;
+  --color-disabled:#5c5b5b;
+
+  --shadow-outer-dark:rgba(0, 0, 0, 1);
+  --shadow-outer-light:rgba(100, 100, 100, 0.3);
+  --shadow-inner-dark:rgba(0, 0, 0, 0.9);
+  --shadow-inner-light:rgba(100, 100, 100, 0.4);
+}
+
+[data-theme='light']{
+  --bg-color:#aaa8a8;
+  --bg-color-shade:#9e9c9c;
+  --bg-color-2:#a09e9e;
+  --text-color:#2a2b2e;
+  --color-primary-1:#706e6e;
+  --color-primary-2:#11999E;
+  --color-primary-3:#3C1874;
+  --color-primary-4:#3C1874;
+  --color-danger:rgb(220, 0, 22);
+  --color-warning:#F1D00A;
+  --color-disabled:#5c5b5b;
+
+  --green:#0f1a0c;
+  --green-glow:#FF2E63;
+
+  --shadow-outer-dark:rgba(7, 6, 6, 0.2);
+  --shadow-outer-light:rgba(100, 100, 100, 0.3);
+
+  --shadow-inner-dark:rgba(0, 0, 3, 0.2);
+  --shadow-inner-light:rgba(205, 209, 213, 0.5);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.App{
+  color:var(--text-color);
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width:100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  background-color: var(--bg-color);
+}
+
+.main-content{
+  display: flex;
+  padding: 0 1rem;
+  overflow-y: scroll;
+}
+
+
+
+@media only screen and (min-width:320px ) {
+  .main-content{
+    width:90%;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width:1024px ) {
+  .main-content{
+    width:90%;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width:1200px ) {
+  .main-content{
+    align-items: flex-start;
+  }
+}
+
+body{
+  background-color: var(--bg-color);
+}

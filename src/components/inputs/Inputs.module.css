@@ -1,0 +1,147 @@
+.inputsSync{  
+    padding: .1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all .15s ease;
+}
+.inputsSync h5{
+    padding: 0;
+    margin: 0;
+}
+.inputContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+.lengthInputContainer{
+    max-width:11rem;
+    /* margin: .2rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.lengthInputContainer h5{
+    padding: 0;
+    margin-top: .3rem;
+    margin-bottom: .6rem;
+}
+
+
+.lineBreak{
+    color:var(--color-primary-1);
+    width:100%;
+    padding: 0;
+    margin: 3px;
+}
+.btnContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color:var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: 7px;
+    padding: .4rem;
+    font-size: 0.9rem;
+    border: .2rem  solid var(--color-primary-1);
+    transition: all .1s ease;
+}
+.inputBtn:active{
+    border: .2rem  solid var(--color-primary-2);
+    box-shadow: inset 3px 3px 4px 0 var(--shadow-inner-dark),
+    inset -2px -2px 2px 0 var(--shadow-inner-light);
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+    /* width:100%; */ /* specific width for FireFox */
+    background: transparent; /* Otherwise white in chrome */
+}
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+}
+input[type=range]:focus{
+    outline:none;
+}
+input[type=range]::-ms-track{/* hides the slider so custom styles ca be added */
+    /* width:90%; */
+    /* min-width: 5rem; */
+    cursor:pointer;
+    background: transparent;     
+    border-color: transparent;
+    color:transparent;
+}
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    margin-top: -.6rem; /* specify margin for chrom */
+    cursor: pointer;
+    height: 1.8rem;
+    width: .55rem;
+    background: var(--text-color);
+    border: .2rem solid var(--color-primary-2);
+    border-radius: .3rem;
+
+
+    cursor:pointer;
+}
+input[type=range]::-moz-range-thumb{
+    height: 1.6rem;
+    width: .55rem;
+    background: var(--text-color);
+    border: .2rem solid var(--color-primary-2);
+
+    cursor:pointer;
+}
+input[type=range]::-ms-thumb{
+    height: 1.6rem;
+    width: .55rem;
+    background: var(--text-color);
+    border: .2rem   solid var(--color-primary-2);
+    cursor:pointer;
+}
+input[type=range]::-webkit-slider-runnable-track{
+    /* min-width: 8rem; */
+    height: .19rem;
+    cursor: pointer;
+    background: var(--text-color);
+    border-radius: .5rem;
+}
+input[type=range]:focus ::-webkit-slider-runnable-track{
+    background: var(--text-color); /* ??? */
+}
+
+input[type=range]::-moz-range-track{
+    /* min-width: 8rem; */
+    height: .19rem;
+    cursor: pointer;
+    background: var(--text-color);
+    border-radius: .5rem;
+}
+input[type=range]::-ms-track{
+    /* min-width: 8rem; */
+    height: .19rem;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color:transparent;
+}
+input[type=range]::-ms-fill-lower{
+    background: var(--text-color);
+    border-radius: .5rem;
+}
+input[type=range]::-ms-fill-upper{
+    background: var(--text-color); 
+}

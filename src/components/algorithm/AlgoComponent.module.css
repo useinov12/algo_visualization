@@ -1,0 +1,77 @@
+.algoComponent{
+    margin-top:.5rem;
+    padding: 10px;
+    padding-bottom: 0;
+    display: flex;
+    border-radius: 10px;
+    border: .2rem  solid var(--color-primary-2);
+}
+
+.singleMode{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 25rem;
+
+}
+.compareMode{
+    min-height: 10rem;
+    margin: .2rem;
+}
+
+.infoPlayMenu{
+    border-radius: 10px;
+    border: .1rem solid var(--color-primary-1);
+    transition: all .15s linear;
+}
+
+.algoComponent.singleMode .infoPlayMenu{
+    padding:.5rem;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.algoComponent.compareMode .infoPlayMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.infoPlayMenu h5{
+    padding:.2rem;
+    margin:0;
+    text-transform: uppercase;
+}
+.infoPlayMenu a{
+    color:var(--text-color);
+}
+
+@media only screen and (min-width:320px ) {
+    .compareMode{
+        min-width: 48%;
+        margin: .2rem;
+    }
+    .algoComponent.singleMode .infoPlayMenu{
+        flex-direction: row;
+    }
+    .singleMode {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:768px ) {
+    .compareMode{
+        min-width: 48%;
+        min-height: 13rem;
+    }
+    .singleMode {
+        display: flex;
+        flex-direction: column;
+        min-height: 30rem;
+    }
+}
