@@ -3,7 +3,7 @@
 
 Live version link
 
-The project was built in [Typescript](https://www.typescriptlang.org/) using [React](https://reactjs.org), [D3.JS](https://d3js.org/) data visualization library and [CSS Modules](https://www.npmjs.com/package/typescript-plugin-css-modules).
+The project was built in [Typescript](https://www.typescriptlang.org/) using [React](https://reactjs.org),  [D3.JS](https://d3js.org/) data visualization library and [CSS Modules](https://www.npmjs.com/package/typescript-plugin-css-modules).
 Functional testing was done with [Jest](https://jestjs.io/).
 
 ### Abstract of functionality:
