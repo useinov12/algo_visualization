@@ -3,13 +3,13 @@
 
 Live version link
 
-The project was built using `React`, `Typescript`, `D3.JS` data visualization library and `CSS Modules`.
+The project was built in Typescript using [https://reactjs.org/](React), [https://d3js.org/](D3.JS) data visualization library and `CSS Modules`.
 Functional testing was done with `Jest`.
 
 ### Abstract of functionality:
 
 User can choose an algorithm to run.
-User can `choose size of input array` or `generate random array` and `Input menu`
+User can `choose size of input array` or `generate random array` in `Input menu`
 User can `play`, `pause` and `reset`, set delay between each step(`speed`) using `Play menu`.
 
 By turning on `Compare Mode` user can choose a few algorithms to run at the same time.
