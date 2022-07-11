@@ -3,14 +3,14 @@
 
 Live version link
 
-The project was built in Typescript using [https://reactjs.org/](React), [https://d3js.org/](D3.JS) data visualization library and `CSS Modules`.
-Functional testing was done with `Jest`.
+The project was built in [Typescript](https://www.typescriptlang.org/) using [React](https://reactjs.org), [D3.JS](https://d3js.org/) data visualization library and [CSS Modules] (https://www.npmjs.com/package/typescript-plugin-css-modules).
+Functional testing was done with [Jest](https://jestjs.io/).
 
 ### Abstract of functionality:
 
 User can choose an algorithm to run.
-User can `choose size of input array` or `generate random array` in `Input menu`
-User can `play`, `pause` and `reset`, set delay between each step(`speed`) using `Play menu`.
+User can choose size of input array or generate random array in Input menu
+User can `play`, `pause`, `reset`, and set delay between each animation step(`speed`) using Play menu.
 
 By turning on `Compare Mode` user can choose a few algorithms to run at the same time.
 
@@ -18,17 +18,17 @@ By turning on `Compare Mode` user can choose a few algorithms to run at the same
 
 
 Algorithm Class created on Algorithm component mount.
-Algorithm Class serves as container `for each instance` of Algorithm Component that holds name, link and `perform a choosen algorithm funciton`. 
+Algorithm Class serves as container for each instance of Algorithm Component that holds name, link and perform a choosen algorithm funciton. 
 
 Algorithm itself is runned when Algorithm component mountes. 
 
 Inside algorithm funcitons placed lines that make records in HashTable
 
-The `output` of algorithm funcitons is `HashTable` with records of all steps and pivot moves that been done by algorithm. 
+The output of algorithm funcitons is HashTable with records of all steps and pivot moves that been done by algorithm. 
 Each record of hashTbale has collection of indexes/values of where/what should be changed and current position of pivots.
 
 
-Algorithm Component holds the local `play menu state` that is fired when Global Play Menu state is changed.
+Algorithm Component holds the local play menu state that is fired when Global Play Menu state is changed.
 
 
 Then the HashTable is used in Chart Component to display the current animation.
