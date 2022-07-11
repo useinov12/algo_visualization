@@ -1,6 +1,38 @@
-# Getting Started with Create React App
+# Algortihm visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Live version link
+
+The project was built using `React`, `Typescript`, `D3.JS` data visualization library and `CSS Modules`.
+Functional testing was done with `Jest`.
+
+### Abstract of functionality:
+
+User can choose an algorithm to run.
+User can `choose size of input array` or `generate random array` and `Input menu`
+User can `play`, `pause` and `reset`, set delay between each step(`speed`) using `Play menu`.
+
+By turning on `Compare Mode` user can choose a few algorithms to run at the same time.
+
+### Abstract of logic:
+
+
+Algorithm Class created on Algorithm component mount.
+Algorithm Class serves as container `for each instance` of Algorithm Component that holds name, link and `perform a choosen algorithm funciton`. 
+
+Algorithm itself is runned when Algorithm component mountes. 
+
+Inside algorithm funcitons placed lines that make records in HashTable
+
+The `output` of algorithm funcitons is `HashTable` with records of all steps and pivot moves that been done by algorithm. 
+Each record of hashTbale has collection of indexes/values of where/what should be changed and current position of pivots.
+
+
+Algorithm Component holds the local `play menu state` that is fired when Global Play Menu state is changed.
+
+
+Then the HashTable is used in Chart Component to display the current animation.
+
 
 ## Available Scripts
 
@@ -19,28 +51,3 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
