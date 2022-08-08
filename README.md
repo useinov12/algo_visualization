@@ -1,52 +1,59 @@
-# Algortihm visualizer
+# ReadMe
+
+## Algorithm visualizer
+
+An algorithm visualizer application for Sort and Search algorithms, built with React,  Typescript, Jest, and CSS.
 
 
-Live version link
 
-The project was built in [Typescript](https://www.typescriptlang.org/) using [React](https://reactjs.org),  [D3.JS](https://d3js.org/) data visualization library and [CSS Modules](https://www.npmjs.com/package/typescript-plugin-css-modules).\
-Functional testing was done with [Jest](https://jestjs.io/).
+## Project Status
 
-### Abstract of functionality:
+The project is currently in development. 
 
-User can choose an algorithm to run.\
-User can choose size of input array or generate random array in Input menu.\
-User can `play`, `pause`, `reset`, and set delay between each animation step(`speed`) using Play menu.
+Users can run algorithms in Single or Compare Modes. 
 
-By turning on `Compare Mode` user can choose a few algorithms to run at the same time.
-
-### Abstract of logic:
+Pathfinding algorithms will be added.
 
 
-Algorithm Class created on Algorithm component mount.\
-Algorithm Class serves as container for each instance of Algorithm Component that holds name, link and perform a choosen algorithm funciton.
+## Project ScreenShots
 
-Algorithm itself is runned when Algorithm component mountes.
-
-Inside algorithm funcitons placed lines that make records in HashTable.
-
-The output of algorithm funcitons is HashTable with records of all steps and pivot moves that been done by algorithm.\
-Each record of hashTbale has collection of indexes/values of where/what should be changed and current position of pivots.
+![algovisGif](https://user-images.githubusercontent.com/88290696/183522165-b18a8871-3c5a-4c7e-ab72-03fe15d65462.gif)
 
 
-Algorithm Component holds the local play menu state that is fired when Global Play Menu state is changed.
+## ****Installation and Setup Instructions****
+
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.
+
+Installation:
+
+`npm install`
+
+To Run Test Suite:
+
+`npm run test`
+
+To Start Server:
+
+`npm start`
+
+To Visit App:
+
+`localhost:3000/`
 
 
-Then the HashTable is used in Chart Component to display the current animation.
+## ****Reflection****
 
+The purpose of this project was to learn more about React state management, the use of time-based functions inside React, and algorithms implementation.
 
-## Available Scripts
+It was a great learning experience. 
 
-In the project directory, you can run:
+It is the first thing I build apart from learning tutorial projects, so I learned a lot. So, I approached it in exploration mode and tried to figure things out independently.
 
-### `npm start`
+I also tried to squeeze from learning maximum potential, so I challenged myself at each step I progress:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Once, I build it with Javascript, I then started to learn Typescript and re-build it with it.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Then I  learned Redux and added it, but after that, I returned to simple React Context. 
+And after I learned and added Jest.
 
-### `npm run test`
-
-Launches the Jest test runner in the interactive watch mode.\
-
+Despite the fact that it is a time-consuming process, I gained a deeper understanding of React and algorithms, develop an appreciation of best practices, and learned to deal with frustration and unknown, hence greater confidence in my own abilities
