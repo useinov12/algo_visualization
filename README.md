@@ -2,6 +2,8 @@
 
 ## Algorithm visualizer
 
+[Live version](https://rookie-visualizer.netlify.app)
+
 An algorithm visualizer application for Sort and Search algorithms, built with React,  Typescript, Jest, and CSS.
 
 
